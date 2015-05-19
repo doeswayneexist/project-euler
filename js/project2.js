@@ -1,2 +1,2 @@
-for (firstNumber = secondNumber = 1, fibSum = totalSum = 0, i = fibSum; i < 4000000; fibSum = firstNumber + secondNumber, firstNumber = secondNumber, secondNumber = fibSum, i = fibSum) if (fibSum % 2 == 0 && fibSum < 4000000) totalSum = totalSum + fibSum;
-alert(totalSum);
+for(x=y=1,z=t=0,i=z;i<4000000;z=x+y,x=y,y=z,i=z)if(z%2==0&&z<4000000)t+=z;
+alert(t);

@@ -1,10 +1,8 @@
-/*
 var numberCap = 4000000;
 var firstNumber = 1;
 var secondNumber = 1;
 var fibSum = 0;
 var totalSum = 0;
-*/
 
 var numberCap, firstNumber, secondNumber, fibSum, totalSum;
 numberCap = 4000000;

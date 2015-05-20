@@ -11,24 +11,26 @@ function isPal (someNum) {
 	var numLength = numString.length;
 
 	//check the first and last chars of the string for identity
-	for (var a = 0, b = numLength-1; a <= b; a++, b--) {
+	for (var i = 0, j = numLength-1; i <= j; i++, j--) {
 
 		//stop the loop if the numbers are not equal
-		if(numString[a] != numString[b]) return false;
+		if(numString[i] != numString[j]) return false;
 	}
 
 	return true;
 }
 
 //produce every product of three digit numbers
-for (var i=100; i<=999; i++) {
+(function(){
 
-	for (j=100; j<=999; j++) {
+	for (var i=100; i<=999; i++) {
 
-		if(isPal(i*j) && currentPal < i*j) currentPal = i*j;
-		//alert(testNum);
+		for (j=100; j<=999; j++) {
+
+			if(isPal(i*j) && currentPal < i*j) currentPal = i*j;
+		}
 	}
-	
-}
+})();
+
 
 alert(currentPal);

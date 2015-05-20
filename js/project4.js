@@ -21,16 +21,13 @@ function isPal (someNum) {
 }
 
 //produce every product of three digit numbers
-(function(){
 
-	for (var i=100; i<=999; i++) {
+for (var i=100; i<=999; i++) {
 
-		for (j=100; j<=999; j++) {
+	for (var j=100; j<=999; j++) {
 
-			if(isPal(i*j) && currentPal < i*j) currentPal = i*j;
-		}
+		if(isPal(i*j) && currentPal < i*j) currentPal = i*j;
 	}
-})();
-
+}
 
 alert(currentPal);

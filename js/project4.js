@@ -21,7 +21,6 @@ function isPal (someNum) {
 }
 
 //produce every product of three digit numbers
-
 for (var i=100; i<=999; i++) {
 
 	for (var j=100; j<=999; j++) {
